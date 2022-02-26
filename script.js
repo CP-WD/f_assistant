@@ -3,7 +3,7 @@ let target_number = document.getElementById('target_number');
 let visit_times_list = Array(300).fill(0);
 let visit_times_element = document.getElementById('visited_times');
 
-let sentence_denial_days = 0;
+let current_days = 0;
 let days_num = document.getElementById('days_num');
 let add_days_num = document.getElementById('add_days_num');
 
@@ -39,6 +39,19 @@ function change_url(target){
 }
 
 
+function add_days(){
+    num = parseInt(add_days_num.value);
+    add_days_num.value = '';
+
+    if (!isNaN(num)){
+        current_days += num;
+        days_num.innerHTML = `Current denial sentence: ${current_days} days`;
+    }
+    
+    return 0;
+}
+
+
 function add_point(){
     num = parseInt(add_point_num.value);
     add_point_num.value = '';
@@ -50,4 +63,3 @@ function add_point(){
     
     return 0;
 }
-
