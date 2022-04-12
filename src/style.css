@@ -1,0 +1,14 @@
+.statusInfo{
+    display: flex;
+    justify-content: center;
+}
+
+.pageLink{
+    display: flex;
+    justify-content: center;
+}
+
+.inputBox{
+    display: flex;
+    justify-content: center;
+}

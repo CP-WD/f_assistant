@@ -33,7 +33,7 @@ function change_url(target){
     [url, num] = gen_url();
     link.setAttribute('href', url);
     visit_times_list[num] += 1;
-    visit_times_element.innerHTML = `Page = ${num}, (${visit_times_list[num]} times now)`;
+    visit_times_element.innerHTML = `Page = ${num} (${visit_times_list[num]} times now)`;
 
     return 0;
 }
