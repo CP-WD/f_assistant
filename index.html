@@ -1,29 +1,37 @@
-<html>
+<html lang="ja">
     <head>
         <meta charset="UTF-8">
         <title>Fap assistant</title>
+        <link rel="stylesheet" href="src/style.css">
     </head>
 
     <body>
         <div>
-            <a href="https://milovana.com/webteases/showtease.php?id=41749&p=1#t" id="page_link">Page link</a>
-            <span id="visited_times">Page = 1, (0 times now)</span>
-            <input id="target_number" type="text" size="2">
-            <button onclick="change_url()">Update link</button>
-        </div>
+            
+            <span class="statusInfo" id="visited_times">Page = 1 (0 times now)</span>
+            <a class="pageLink" href="https://milovana.com/webteases/showtease.php?id=41749&p=1#t" id="page_link">Page link</a>
+            <span class="inputBox">
+                <input id="target_number" type="text" inputmode="decimal" size="2">
+                <button onclick="change_url()">Update link</button>
+            </span>
+        </div><br>
 
         <div>
-            <span id = "days_num">Current denial sentence: 0 days</span>
-            <input id="add_days_num" type="text" size="2">
-            <button onclick="add_days()">add_days</button>
-        </div>
+            <span class="statusInfo" id = "days_num">Current denial sentence: 0 days</span>
+            <span class="inputBox">
+                <input id="add_days_num" type="text" inputmode="decimal" size="2">
+                <button onclick="add_days()">add_days</button>
+            </span>
+        </div><br>
 
         <div>
-            <span id = "point_num">Current your points: 0 points</span>
-            <input id="add_point_num" type="text" size="2">
-            <button onclick="add_point()">add_point</button>
+            <span class="statusInfo" id = "point_num">Current your points: 0 points</span>
+            <span class="inputBox">
+                <input id="add_point_num" type="text" inputmode="decimal" size="2">
+                <button onclick="add_point()">add_point</button>
+            </span>
         </div>
     </body>
 
-    <script src="script.js"></script>
+    <script src="src/script.js"></script>
 </html>
