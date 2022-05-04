@@ -107,6 +107,7 @@ function change_url(target){
     visit_times_list = cookie.get("visitedTimes");
     visit_times_list[num] += 1;
     visit_times_element.innerHTML = `Page = ${num} (${visit_times_list[num]} times now)`;
+    target_number.value = '';
     cookie.set("visitedTimes", visit_times_list);
     updateCookie();
 
